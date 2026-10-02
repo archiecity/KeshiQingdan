@@ -1,0 +1,16 @@
+{
+  "name": "weeklist",
+  "productName": "可视清单",
+  "version": "1.0.0",
+  "description": "周视图任务日历 - 拖拽创建任务",
+  "main": "main.js",
+  "author": "archie",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node dev/test-data.js && node dev/test-note.js && node dev/test-deadline-ui.js && node dev/test-search.js"
+  },
+  "devDependencies": {
+    "electron": "^41.5.0"
+  }
+}

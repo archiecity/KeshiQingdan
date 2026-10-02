@@ -1,0 +1,19 @@
+# 打包产物、Electron 运行时（体积大，且包含个人数据/缓存）
+/可视清单/
+/可视清单.zip
+/可视清单-分享版.zip
+
+# 本地生成的快捷方式（含本机绝对路径）
+*.lnk
+
+# 依赖与日志
+node_modules/
+/data/
+npm-debug.log*
+*.log
+
+# 编辑器 / 系统文件
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

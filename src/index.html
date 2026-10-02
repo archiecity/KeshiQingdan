@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>可视清单</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="titlebar">
+    <div class="tb-brand">
+      <img src="assets/icon.png" alt="" />
+      <span>可视清单</span>
+    </div>
+    <div class="tb-center" id="tbToday"></div>
+    <div class="tb-actions">
+      <button class="icon-btn" id="btnTheme" title="切换深色 / 浅色"></button>
+      <button class="icon-btn" id="btnSettings" title="设置"></button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <main class="main">
+      <div class="toolbar">
+        <div class="tb-group">
+          <button class="icon-btn" id="btnPrev" title="上一页（←）"></button>
+          <button class="icon-btn" id="btnNext" title="下一页（→）"></button>
+          <button class="btn outline" id="btnToday" title="回到今天（T）">今天</button>
+          <h1 class="range-label" id="rangeLabel"></h1>
+        </div>
+        <div class="tb-group right">
+          <div class="seg" id="viewSeg">
+            <button data-view="week">周</button>
+            <button data-view="day">日</button>
+          </div>
+          <label class="search-box" id="searchBox">
+            <input id="search" placeholder="搜索任务（/）" />
+          </label>
+          <button class="btn primary" id="btnNew" title="新建任务（N）"></button>
+        </div>
+      </div>
+
+      <div class="calendar" id="calendar">
+        <div class="cal-head" id="calHead"></div>
+        <div class="allday" id="allday"></div>
+        <div class="grid" id="grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="pop" id="pop" hidden></div>
+  <div class="menu" id="ctxmenu" hidden></div>
+
+  <script src="js/util.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/dialogs.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
